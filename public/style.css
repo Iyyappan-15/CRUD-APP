@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Times+New+Roman&display=swap');
+
+body {
+  font-family: 'Times New Roman', serif;
+  background: linear-gradient(120deg, #c9e9ff, #e1bee7, #f8bbd0);
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  animation: bgTransition 10s infinite alternate ease-in-out;
+}
+
+@keyframes bgTransition {
+  0% { background: linear-gradient(120deg, #bbdefb, #f8bbd0); }
+  50% { background: linear-gradient(120deg, #c8e6c9, #b3e5fc); }
+  100% { background: linear-gradient(120deg, #d1c4e9, #ffe0b2); }
+}
+
+.fade-in {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+  font-family: 'Times New Roman', serif;
+  font-weight: bold;
+  color: #2c3e50;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+}
+
+.table {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.table:hover {
+  transform: scale(1.02);
+}
+
+.table thead {
+  background-color: #212121;
+  color: #fff;
+  font-family: 'Times New Roman', serif;
+  letter-spacing: 1px;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #f1f8e9;
+  transition: 0.3s ease;
+}
+
+#searchbox {
+  border-radius: 25px;
+  border: 2px solid #1976d2;
+  padding: 8px 15px;
+  transition: 0.3s ease;
+}
+
+#searchbox:focus {
+  outline: none;
+  box-shadow: 0px 0px 10px rgba(33, 150, 243, 0.4);
+}
+
+.btn {
+  transition: 0.3s ease;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.modal-content {
+  border-radius: 15px;
+  animation: zoomIn 0.5s ease;
+}
+
+@keyframes zoomIn {
+  0% { transform: scale(0.8); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  color: #444;
+  background: rgba(255,255,255,0.4);
+  border-top: 1px solid rgba(0,0,0,0.1);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
